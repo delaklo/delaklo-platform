@@ -1,0 +1,27 @@
+@use "../../variables" as *;
+
+.btn{
+    display: block;
+    width: 380px;
+    height:60px;
+    margin: 20px;
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+    font-family: $font-stack;
+    font-size: 16px;
+    border: 1px solid white;
+
+    &:hover{
+        background-color: rgb(35, 36, 36);
+        cursor: pointer;
+    }
+}
+
+.globalScore{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 15px;
+}
