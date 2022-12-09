@@ -1,11 +1,11 @@
-import React, { useEffect, useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import { allQuestions } from './questions';
 import { Link } from "react-router-dom";
 
 import './Exam.scss';
 import CodeBlock from './CodeBlock';
-import { useDispatch, useSelector } from 'react-redux';
-import { selectScore, setGlobalScore } from './ExamSlice';
+import { useDispatch } from 'react-redux';
+import {  setGlobalScore } from './ExamSlice';
 
 const Exam = ()=>{
 
@@ -16,7 +16,7 @@ const Exam = ()=>{
     const [answers, setAnswers] = useState([]);
     const [correctAnswers, setCorrectAnswers] = useState([]);
 
-    const globalScore = useSelector(selectScore);
+    
     const dispatch = useDispatch();
 
   

@@ -1,5 +1,7 @@
 
 @use "../../variables" as *;
+@use "../../mixins" as *;
+
 
 .exam{
     color: white;
@@ -59,6 +61,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .exam__result__wrapper{
@@ -67,7 +70,10 @@
     height: 400px;
     border: 1px solid rgb(175, 175, 175);
     border-radius: 5px;
-    margin: 15px;
+    margin: 15px; 
+    @include media("max", "md") {
+        width: 100vw;
+      }
 }
 
 .exam__result{
@@ -76,7 +82,8 @@
     justify-content: center;
     align-items: center;
     text-align: left;
-    padding: 15px;
+    padding: 15px;       
+
 }
 
 .question__block{
@@ -95,7 +102,12 @@
 
 .result__buttons{
     display: flex;
-
+    @include media("max", "md") {
+        flex-direction: column;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+      }
 }
 
 .result__score{
