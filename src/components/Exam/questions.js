@@ -65,4 +65,15 @@ export const allQuestions = [
         ],
         explanation: "The 'typeof' operator returns a string indicating the type of the operand. In this example, 'myFunc' is not called, so the 'typeof' operator will return the function type ('Function object' (implements '[[Call]]' in terms of 'ECMA-262')) - 'function'."
     },
+    {
+        questionText: "What is the global Proxy object for?",
+        id: 7,
+        answerOptions: [
+            {answerText: "To intercept and process operations on objects", isCorrect: true },
+            {answerText: "This global object is not implemented in the current language specification.", isCorrect: false },
+            {answerText: "The Proxy object represents the eventual completion (or failure) of an asynchronous operation and its resulting value", isCorrect: false },
+            {answerText: "The Proxy object provides atomic operations as static methods.", isCorrect: false },
+        ],
+        explanation: "the Proxy object wraps the 'target' object and can intercept (or independently process) operations on it."
+    },
 ]

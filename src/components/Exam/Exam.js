@@ -6,6 +6,7 @@ import './Exam.scss';
 import CodeBlock from './CodeBlock';
 import { useDispatch } from 'react-redux';
 import {  setGlobalScore } from './ExamSlice';
+import Sidebar from '../Sidebar/Sidebar';
 
 const Exam = ()=>{
 
@@ -65,11 +66,13 @@ const Exam = ()=>{
           const i = Math.floor(Math.random() * len--);
           [res[len],res[i]] = [res[i], res[len]];
         }
-        res = res.slice(0, 5)
+        res = res.slice(0, 6)
         return res;
       }
 
     return(
+        <div className='exam__wrapper'>
+        <Sidebar />
          <div className='exam'>
          {showScore ?   
          <div className='exam__end'>
@@ -104,7 +107,7 @@ const Exam = ()=>{
             <>
             <div className='exam__question'>
                 <div className='question__count'>
-                    <span>{currentQuestion + 1}</span> / 5
+                    <span>{currentQuestion + 1}</span> / {questions.length}
                 </div>
                 <div className='question__text'>{questions[currentQuestion].questionText}</div>
                 <div><CodeBlock id={questions[currentQuestion].id} /></div>
@@ -120,7 +123,7 @@ const Exam = ()=>{
                 </>
         }
             </div>
-
+            </div>
     )
 }
 

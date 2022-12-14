@@ -3,6 +3,11 @@
 @use "../../mixins" as *;
 
 
+.exam__wrapper{
+    display: flex;
+    justify-content: center;
+}
+
 .exam{
     color: white;
     display: flex;
@@ -15,7 +20,7 @@
     display: block;
     width: 70vw;
     height: 300px;
-    border: 1px solid white;  
+    border: 1px solid rgb(145, 145, 145);  
     border-radius: 5px;  
     margin: 50px 0 50px 0;    
 }
@@ -39,12 +44,17 @@
     border-radius: 4px;
     font-family: $font-stack;
     font-size: 16px;
-    border: 1px solid white;
+    border: 1px solid rgb(145, 145, 145);
 
     &:hover{
         background-color: rgb(35, 36, 36);
         cursor: pointer;
     }
+
+        @include media("max", "md") {
+        overflow: scroll;
+        height: 50%
+      }
 }
 
 .question__count{
@@ -61,7 +71,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    margin: 0 auto;
 }
 
 .exam__result__wrapper{
@@ -92,6 +102,8 @@
 
 .result__answers{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -102,6 +114,7 @@
 
 .result__buttons{
     display: flex;
+    flex-direction: column;
     @include media("max", "md") {
         flex-direction: column;
         width: 100vw;

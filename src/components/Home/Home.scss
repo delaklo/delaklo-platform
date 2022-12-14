@@ -1,19 +1,30 @@
-@use "../../variables" as *;
 
-.btn{
-    display: block;
-    width: 380px;
-    height:60px;
+.home__wrapper{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home{
+    display: flex;
+    
+}
+
+.rightSide{
     margin: 20px;
-    background-color: transparent;
+}
+
+.block{
+    display: block;
+    width: 900px;
+    background-color: rgb(48, 48, 48);
     color: white;
-    border-radius: 4px;
-    font-family: $font-stack;
-    font-size: 16px;
-    border: 1px solid white;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: .4rem;
+    text-align: left;
 
     &:hover{
-        background-color: rgb(35, 36, 36);
         cursor: pointer;
     }
 }
@@ -24,4 +35,11 @@
     font-weight: 700;
     text-align: center;
     margin: 15px;
+}
+
+.block__info{
+    color: rgb(185, 185, 185);
+    font-weight: 700;
+    text-align: center;
+    margin: 15px 5px 15px 15px;
 }

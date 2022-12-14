@@ -68,6 +68,10 @@ if(props.id == 6){
     )
 }
 
+if(props.id == 7){
+    return(<div></div>)
+}
+
 
     return(
         <div>Error</div>

@@ -4,7 +4,12 @@
 
 .App {
   text-align: center;
-  background-color:  #181818;
   font-family: $font-stack;
 }
 
+a{
+  text-decoration: none;
+  &:visited{
+    color: inherit; 
+  }
+}
