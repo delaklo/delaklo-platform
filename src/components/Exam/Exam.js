@@ -66,7 +66,7 @@ const Exam = ()=>{
           const i = Math.floor(Math.random() * len--);
           [res[len],res[i]] = [res[i], res[len]];
         }
-        res = res.slice(0, 6)
+        res = res.slice(0, 12)
         return res;
       }
 
@@ -77,14 +77,10 @@ const Exam = ()=>{
          {showScore ?   
          <div className='exam__end'>
             <div className='result__buttons'>
-                <p className='result__score'>Your Score: {score} / 5</p>
+                <p className='result__score'>Your Score: {score} / {questions.length}</p>
                 <button className='answer__btn' onClick={reset}>
                 Try Again
                 </button>
-                <Link to="/"><button className='answer__btn' onClick={exit}>
-                    Back to Home
-                </button>
-                </Link>
                 </div>
                 {questions.map((el, index)=>(
                     <div className='exam__result__wrapper'>
@@ -98,9 +94,13 @@ const Exam = ()=>{
                     Correct answer is ' {correctAnswers[index]} '
                    </div>
                    <div className='exam__explanation'>{questions[index].explanation}</div>
-                    </div> 
+                    </div>
                     </div>
                 ))}
+                <Link to="/"><button className='answer__btn' onClick={exit}>
+                    Finish test and Back to Home
+                </button>
+                </Link> 
             </div>
 
             :

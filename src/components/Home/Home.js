@@ -20,7 +20,7 @@ const globalScore = useSelector(selectScore);
             <h2>Javascript Examination</h2>
             <p>With this quiz you can test your knowledge of JavaScript</p><br/>
             <span className='block__info'>Number of questions in  this exam: </span>12 <br/>
-            <span className='block__info'>Total questions: </span>58 <br/>
+            <span className='block__info'>Total questions: </span>22 <br/>
             <span className='block__info'>Time duration: </span>No limit
         </div></Link>
         <div className='block'>

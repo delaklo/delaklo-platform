@@ -22,7 +22,8 @@
     height: 300px;
     border: 1px solid rgb(145, 145, 145);  
     border-radius: 5px;  
-    margin: 50px 0 50px 0;    
+    margin: 50px 0 50px 0; 
+    overflow-y: auto; 
 }
 
 .exam__answer{
@@ -81,6 +82,7 @@
     border: 1px solid rgb(175, 175, 175);
     border-radius: 5px;
     margin: 15px; 
+    overflow-y: auto;  
     @include media("max", "md") {
         width: 100vw;
       }
