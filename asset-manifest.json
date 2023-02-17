@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/delaklo-platform/static/css/main.62cc64a2.css",
+    "main.css": "/delaklo-platform/static/css/main.854b9552.css",
     "main.js": "/delaklo-platform/static/js/main.60d549c8.js",
     "static/js/787.481d20f8.chunk.js": "/delaklo-platform/static/js/787.481d20f8.chunk.js",
     "index.html": "/delaklo-platform/index.html",
-    "main.62cc64a2.css.map": "/delaklo-platform/static/css/main.62cc64a2.css.map",
+    "main.854b9552.css.map": "/delaklo-platform/static/css/main.854b9552.css.map",
     "main.60d549c8.js.map": "/delaklo-platform/static/js/main.60d549c8.js.map",
     "787.481d20f8.chunk.js.map": "/delaklo-platform/static/js/787.481d20f8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.62cc64a2.css",
+    "static/css/main.854b9552.css",
     "static/js/main.60d549c8.js"
   ]
 }
